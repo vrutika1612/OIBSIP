@@ -1,0 +1,13 @@
+target/
+*.class
+*.log
+reservation.db
+reservation.db-shm
+reservation.db-wal
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.env
+.env.*
