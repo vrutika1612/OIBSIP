@@ -1,0 +1,3 @@
+package com.oibsip.onlineexam.service;
+import com.oibsip.onlineexam.model.User; import com.oibsip.onlineexam.util.PasswordUtil;
+public class ProfileService {public void update(User u,String name,String password,String confirm){if(u==null)throw new IllegalArgumentException("No active user."); if(name==null||name.isBlank())throw new IllegalArgumentException("Display name is required."); if(password!=null&&!password.isBlank()){if(!password.equals(confirm))throw new IllegalArgumentException("Passwords do not match."); u.setPasswordHash(PasswordUtil.hash(password));} u.setDisplayName(name.trim());}}

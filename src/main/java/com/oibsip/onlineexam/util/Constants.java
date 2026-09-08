@@ -1,0 +1,1 @@
+package com.oibsip.onlineexam.util; public final class Constants {private Constants(){} public static final int EXAM_DURATION_SECONDS=30*60; public static final String EXAM_TITLE="Java Programming Assessment";}

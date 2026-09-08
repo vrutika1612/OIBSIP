@@ -1,0 +1,2 @@
+package com.oibsip.onlineexam.model;
+public class User { private final String username; private String passwordHash; private String displayName; public User(String u,String p,String d){username=u;passwordHash=p;displayName=d;} public String getUsername(){return username;} public String getPasswordHash(){return passwordHash;} public String getDisplayName(){return displayName;} public void setPasswordHash(String h){passwordHash=h;} public void setDisplayName(String n){displayName=n;} }

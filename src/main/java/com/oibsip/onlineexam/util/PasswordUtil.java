@@ -1,0 +1,3 @@
+package com.oibsip.onlineexam.util;
+import java.nio.charset.StandardCharsets; import java.security.*; import java.util.HexFormat;
+public final class PasswordUtil {private PasswordUtil(){} public static String hash(String value){try{byte[] b=MessageDigest.getInstance("SHA-256").digest(value.getBytes(StandardCharsets.UTF_8));return HexFormat.of().formatHex(b);}catch(NoSuchAlgorithmException e){throw new IllegalStateException(e);}} public static boolean matches(String raw,String hash){return MessageDigest.isEqual(hash(raw).getBytes(StandardCharsets.UTF_8),hash.getBytes(StandardCharsets.UTF_8));}}

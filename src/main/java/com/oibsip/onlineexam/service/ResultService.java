@@ -1,0 +1,1 @@
+package com.oibsip.onlineexam.service; import com.oibsip.onlineexam.model.*; public class ResultService {public String grade(ExamResult r){return r.score()+"/"+r.total()+" ("+String.format("%.1f",r.percentage())+"%)";}}
