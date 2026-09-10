@@ -1,0 +1,23 @@
+target/
+<<<<<<< HEAD
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+.vscode/
+=======
+*.class
+*.log
+reservation.db
+reservation.db-shm
+reservation.db-wal
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.env
+.env.*
+>>>>>>> a9dc5ba797b6d1f7e1275471163629eacf11f9e9
